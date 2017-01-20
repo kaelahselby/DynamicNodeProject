@@ -1,0 +1,43 @@
+module.exports = {
+    index: function(req, res) {
+      var id = req.session.userid;
+      var viewModel = {uid:id,city:"oxford"};
+      if(!req.session.userid){
+        res.render('loginform', viewModel);
+      }else{
+        res.render('timer', viewModel);
+        
+      }
+
+    },
+    loginform: function(req, res) {
+      var id = req.body.userid;
+      var viewModel = {uid:id,city:"oxford"};
+          res.render('timer', viewModel);
+     },
+    loginSubmit: function(req, res) {
+      req.body.login = "logout";
+	var id = req.session.userid;
+        var viewModel = {uid:id,city:"oxford"};
+        res.render('timer', viewModel);
+    },
+     timer: function(req, res) {
+       req.body.login = "logout";
+       var id = req.session.userid;
+       var viewModel = {uid:id,city:"oxford"};
+       
+      if(!req.session.userid){
+        res.render('loginform', viewModel);
+      }else{
+        
+        res.render('timer', viewModel);
+        
+      }
+    },
+    about: function(req, res) {
+      var id = req.body.userid;
+      var viewModel = {uid:id ,city:"oxford"};
+        res.render('about', viewModel);
+    }
+
+};

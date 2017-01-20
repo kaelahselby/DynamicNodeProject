@@ -1,0 +1,100 @@
+<div class="alert alert-success">
+  <strong>Success!</strong> Welcome {{uid}} !
+</div>
+<div class="container">
+<div class="col-sm-12 header">
+<div class="row">
+<div class="col-sm-4">
+<div class="panel panel-default">
+  <div class="panel-body">
+ <form action="/timerSubmit" method = "post" id = "timer1">
+  <div class="form-group">
+    <label>Timer Name</label>
+    <input type="text" class="form-control" id="timer1Name">
+  </div>
+<div class = col-sm-12>
+  <div class = "row">
+  <div class="form-group">
+  <div class="col-xs-4">
+    <input placeholder="0"type="text" class="form-control" id="hour">
+  </div>
+  <div class="col-xs-4">
+    <input type="text" placeholder="00" class="form-control" id="minute">
+    </div>
+    <div class="col-xs-4">
+    <input type="text" placeholder="00" class="form-control" id="second">
+    </div>
+    </div>
+</div><center>
+   <br> <label for="timer1Done">Done at:</label>
+  </center></div>
+  <center><button type="submit" id = "start1" class="btn btn-default">Start</button>
+</center></form>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="panel panel-default">
+  <div class="panel-body">
+ <form id = "timer2">
+  <div class="form-group">
+    <label >Timer Name</label>
+    <input type="text" class="form-control" id="timer2Name">
+  </div>
+<div class = col-sm-12>
+  <div class = "row">
+  <div class="form-group">
+  <div class="col-xs-4">
+    <input type="text" class="form-control" id="hour2">
+  </div>
+  <div class="col-xs-4">
+    <input type="text" class="form-control" id="minute2">
+    </div>
+    <div class="col-xs-4">
+    <input type="text" class="form-control" id="second2">
+    </div>
+    </div>
+</div><center>
+   <br> <label for="timer2Done">Done at:</label>
+  </center></div>
+  <center><button type="submit" id = "start2" class="btn btn-default">Start</button>
+</center></form>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="panel panel-default">
+  <div class="panel-body">
+ <form id = "timer3">
+  <div class="form-group">
+    <label>Timer Name</label>
+    <input type="text" class="form-control" id="timer3Name">
+  </div>
+<div class = col-sm-12>
+  <div class = "row">
+  <div class="form-group">
+  <div class="col-xs-4">
+    <input type="text" class="form-control" id="hour3">
+  </div>
+  <div class="col-xs-4">
+    <input type="text" class="form-control" id="minute3">
+    </div>
+    <div class="col-xs-4">
+    <input type="text" class="form-control" id="second3">
+    </div>
+    </div>
+</div><center>
+   <br> <label for="timer3Done">Done at:</label>
+  </center></div>
+  <center><button type="submit" id = "start3" class="btn btn-default">Start</button>
+</center></form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading"><center>Timer Application Account info:</center></div>
+  <div class="panel-body"><center>You have visited {{visits}} time(s). Last Access - {{access}}</center></div>
+</div>
