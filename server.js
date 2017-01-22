@@ -4,7 +4,7 @@ var express = require('express'),
     mongoose = require('mongoose'),
    cookieParser = require('cookie-parser'); // the session is stored in a cookie, so we use this to parse it
 app = express();
-app.set('port', process.env.PORT || 3630);
+app.set('port', process.env.PORT || 3640);
 app.set('views', __dirname + '/views');
 app = config(app);
 mongoose.connect('mongodb://localhost/project');

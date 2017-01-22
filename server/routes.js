@@ -12,6 +12,7 @@ module.exports = function(app) {
     router.get('/timerInit', home.timerInit);
     router.post('/registerSubmit', home.registerSubmit);
     router.post('/registerInit', home.registerInit);
+    router.post('/timerSubmit',home.timerSubmit);
     app.use(router);
 
 };

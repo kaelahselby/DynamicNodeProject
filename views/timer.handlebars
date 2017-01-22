@@ -7,87 +7,90 @@
 <div class="col-sm-4">
 <div class="panel panel-default">
   <div class="panel-body">
+{{#with time1}}
  <form action="/timerSubmit" method = "post" id = "timer1">
   <div class="form-group">
     <label>Timer Name</label>
-    <input type="text" class="form-control" id="timer1Name">
+    <input type="text" class="form-control" id="timer1Name" name = "timerName" value = {{name}}>
   </div>
 <div class = col-sm-12>
   <div class = "row">
   <div class="form-group">
   <div class="col-xs-4">
-    <input placeholder="0"type="text" class="form-control" id="hour">
+    <input type="text" class="form-control" id="hour" name = "hour" value = {{hour}}>
   </div>
   <div class="col-xs-4">
-    <input type="text" placeholder="00" class="form-control" id="minute">
+    <input type="text"  class="form-control" id="minute" name = "minute" value = {{minute}}>
     </div>
     <div class="col-xs-4">
-    <input type="text" placeholder="00" class="form-control" id="second">
+    <input type="text" class="form-control" id="second" name = "second" value = {{second}}>
     </div>
     </div>
 </div><center>
    <br> <label for="timer1Done">Done at:</label>
   </center></div>
-  <center><button type="submit" id = "start1" class="btn btn-default">Start</button>
-</center></form>
+  <center><button type="submit" id = "start1" class="btn btn-default">{{start}}</button>
+</center></form>{{/with}}
 </div>
 </div>
 </div>
 <div class="col-sm-4">
 <div class="panel panel-default">
   <div class="panel-body">
- <form id = "timer2">
+{{#with time2}}
+ <form id = "timer2" action="/timerSubmit" method = "post">
   <div class="form-group">
     <label >Timer Name</label>
-    <input type="text" class="form-control" id="timer2Name">
+    <input type="text" class="form-control" id="timerName" name = "timerName" value = {{name}}>
   </div>
 <div class = col-sm-12>
   <div class = "row">
   <div class="form-group">
   <div class="col-xs-4">
-    <input type="text" class="form-control" id="hour2">
+    <input type="text" class="form-control" id="hour" name = "hour" value = {{hour}}>
   </div>
   <div class="col-xs-4">
-    <input type="text" class="form-control" id="minute2">
+    <input type="text" class="form-control" id="minute" name = "minute" value = {{minute}}>
     </div>
     <div class="col-xs-4">
-    <input type="text" class="form-control" id="second2">
+    <input type="text" class="form-control" id="second" name = "second" value = {{second}}>
     </div>
     </div>
 </div><center>
    <br> <label for="timer2Done">Done at:</label>
   </center></div>
-  <center><button type="submit" id = "start2" class="btn btn-default">Start</button>
-</center></form>
+  <center><button type="submit" id = "start2" class="btn btn-default">{{start}}</button>
+</center></form>{{/with}}
 </div>
 </div>
 </div>
 <div class="col-sm-4">
 <div class="panel panel-default">
   <div class="panel-body">
- <form id = "timer3">
+{{#with time3}}
+ <form id = "timer3" action="/timerSubmit" method = "post">
   <div class="form-group">
     <label>Timer Name</label>
-    <input type="text" class="form-control" id="timer3Name">
+    <input type="text" value = {{name}} class="form-control" id="timerName" name = "timerName">
   </div>
 <div class = col-sm-12>
   <div class = "row">
   <div class="form-group">
   <div class="col-xs-4">
-    <input type="text" class="form-control" id="hour3">
+    <input type="text" class="form-control" value = {{hour}} id="hour" name = "hour">
   </div>
   <div class="col-xs-4">
-    <input type="text" class="form-control" id="minute3">
+    <input type="text" class="form-control" id="minute" name="minute" value = {{minute}}>
     </div>
     <div class="col-xs-4">
-    <input type="text" class="form-control" id="second3">
+    <input type="text" class="form-control" id="second" name = "second" value = {{second}}>
     </div>
     </div>
 </div><center>
    <br> <label for="timer3Done">Done at:</label>
   </center></div>
-  <center><button type="submit" id = "start3" class="btn btn-default">Start</button>
-</center></form>
+  <center><button type="submit" id = "start3" class="btn btn-default">{{start}}</button>
+</center></form>{{/with}}
 </div>
 </div>
 </div>
